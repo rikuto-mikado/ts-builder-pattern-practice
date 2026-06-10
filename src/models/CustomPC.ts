@@ -4,7 +4,7 @@ export class CustomPC {
     public readonly storage: string;
     public readonly gpu?: string | undefined;
 
-    constructor(specs: { cpu: string; memory: string; storage: string; gpu?: string }) {
+    constructor(specs: { cpu: string; memory: string; storage: string; gpu?: string | undefined}) {
         this.cpu = specs.cpu;
         this.memory = specs.memory;
         this.storage = specs.storage;
